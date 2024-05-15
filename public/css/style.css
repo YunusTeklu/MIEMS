@@ -1,0 +1,96 @@
+.bodyTheme{
+    background: linear-gradient(to right bottom, #080808, #282828 )  ;
+}
+
+.card{
+    background: transparent;
+}
+
+.card-header{
+    background: #181818;
+}
+
+.form-control{
+    background: transparent;
+    color: #aaaaaa;
+    border-color: #383838;
+}
+
+.form-control:focus{
+    background: transparent;
+    color: #aaaaaa;
+    border-color: #383838;
+}
+
+.form-control::-ms-expand {
+	background: #282828;
+    color: #aaaaaa;
+    border-color: #383838;
+} 
+
+/*
+    Style for sidebar
+*/
+#sidebar-wrapper{
+    width: 280px;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    background: #252525;
+    transition: 0.5s;
+    
+}
+
+#main-wrapper{
+    padding-left: 300px;
+    position: absolute;
+    transition: 0.5s;
+}
+
+#wrapper.menuDisplayed #sidebar-wrapper{
+    width: 0px;
+}
+
+#wrapper.menuDisplayed #main-wrapper{
+    padding-left: 0px;
+    width: 100%;
+}
+
+#main-wrapper .toggel-btn{
+    left: 30px;
+    top: 30px;
+}
+
+#main-wrapper .toggle-btn span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background: white;
+    margin: 4px 20px;
+}
+
+#sidebar-nav{
+    padding:0;
+    list-style: none;
+} 
+
+#sidebar-nav li{
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+#sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+
+}
+
+#sidebar-nav li a:hover{
+    background: #454545;
+    opacity: 0.8;
+}
+/*End of sidebar style*/
+
+
